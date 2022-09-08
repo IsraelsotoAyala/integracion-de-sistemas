@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
+import { ClientesService } from '../clientes.service';
 
 @Component({
   selector: 'app-listar-clientes',
@@ -14,8 +15,8 @@ export class ListarClientesComponent implements OnInit {
 
   clientes: any[] = [];
 
-  constructor() { } 
-
+  constructor(private service:ClientesService) { }
+/*
   addCliente()
   {
     this.clientes.push({tipo:"PERSONA",numero_documento:"42582623",nombres:"Israel"});
@@ -26,16 +27,22 @@ export class ListarClientesComponent implements OnInit {
   {
     this.clientes.splice(this.clientes.length-1,1);
   }
-
+*/
   ngOnInit(): void {
     this.dtOptions = {
       pagingType: 'full_numbers',
       pageLength: 10
     };
 
-    this.clientes.push({tipo:"PERSONA",numero_documento:"42582623",nombres:"Israel"});
+    this.service.getClientes().subscribe((response:any)=>{
+     
+      console.log(response);
+      this.clientes=response.data;
 
-    this.dtTrigger.next(null);
+      this.dtTrigger.next(null);
+
+    });
+
   }
 
 }
