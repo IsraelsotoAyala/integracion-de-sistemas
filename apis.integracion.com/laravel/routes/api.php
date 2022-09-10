@@ -27,6 +27,11 @@ Route::get('/v1/clientes/{id}', [ClientesController::class, 'getItem']);
 
 Route::post('/v1/clientes', [ClientesController::class, 'save']);
 
+Route::put('/v1/clientes/{id}', [ClientesController::class, 'updatePut']);
+Route::patch('/v1/clientes/{id}', [ClientesController::class, 'updatePatch']);
+
+Route::delete('/v1/clientes/{id}', [ClientesController::class, 'delete']);
+
 
 Route::get('/v1/productos', [ProductosController::class, 'getAll']);
 Route::get('/v1/productos/{id}', [ProductosController::class, 'getItem']);
