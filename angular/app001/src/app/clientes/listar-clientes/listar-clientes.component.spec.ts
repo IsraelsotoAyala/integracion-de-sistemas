@@ -21,4 +21,3 @@ describe('ListarClientesComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-<h2>el valor del text es {{txtValor}}</h2>
