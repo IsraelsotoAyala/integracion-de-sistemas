@@ -6,13 +6,21 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { ListClientesComponent } from './clientes/list-clientes/list-clientes.component';
+import { NewClienteComponent } from './clientes/new-cliente/new-cliente.component';
+import { ListproductosComponent } from './productos/listproductos/listproductos.component';
+import { NewproductoComponent } from './productos/newproducto/newproducto.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     NavMenuComponent,
-    FooterComponent
+    FooterComponent,
+    ListClientesComponent,
+    NewClienteComponent,
+    ListproductosComponent,
+    NewproductoComponent
   ],
   imports: [
     BrowserModule,
