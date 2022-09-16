@@ -16,8 +16,11 @@
 
   <section class="content">
     <div class="container-fluid">
+        <button mat-raised-button (click)="openNewCliente()">Nuevo Cliente</button>
       <div class="row">
 
+        
+        
         <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover table table-striped display table-bordered">
             <thead>
               <tr>
