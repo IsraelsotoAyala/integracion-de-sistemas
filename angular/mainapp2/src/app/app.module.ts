@@ -13,6 +13,8 @@ import { NewproductoComponent } from './productos/newproducto/newproducto.compon
 import { DataTablesModule } from 'angular-datatables';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from  '@angular/common/http';
+import { ListVentasComponent } from './ventas/list-ventas/list-ventas.component';
+import { NewventaComponent } from './ventas/newventa/newventa.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { HttpClientModule } from  '@angular/common/http';
     ListClientesComponent,
     NewClienteComponent,
     ListproductosComponent,
-    NewproductoComponent
+    NewproductoComponent,
+    ListVentasComponent,
+    NewventaComponent,
+ 
   ],
   imports: [
     BrowserModule,

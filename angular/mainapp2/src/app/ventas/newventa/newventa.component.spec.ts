@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { NewventaComponent } from './newventa.component';
+
+describe('NewventaComponent', () => {
+  let component: NewventaComponent;
+  let fixture: ComponentFixture<NewventaComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ NewventaComponent ]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(NewventaComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
