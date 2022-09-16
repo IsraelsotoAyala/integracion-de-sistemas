@@ -10,6 +10,9 @@ import { ListClientesComponent } from './clientes/list-clientes/list-clientes.co
 import { NewClienteComponent } from './clientes/new-cliente/new-cliente.component';
 import { ListproductosComponent } from './productos/listproductos/listproductos.component';
 import { NewproductoComponent } from './productos/newproducto/newproducto.component';
+import { DataTablesModule } from 'angular-datatables';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from  '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { NewproductoComponent } from './productos/newproducto/newproducto.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataTablesModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
