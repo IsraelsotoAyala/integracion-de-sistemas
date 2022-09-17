@@ -17,6 +17,10 @@ import { ListVentasComponent } from './ventas/list-ventas/list-ventas.component'
 import { NewventaComponent } from './ventas/newventa/newventa.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {ReactiveFormsModule} from "@angular/forms";
+
 
 @NgModule({
   declarations: [
@@ -30,6 +34,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     NewproductoComponent,
     ListVentasComponent,
     NewventaComponent,
+
  
   ],
   imports: [
@@ -39,7 +44,14 @@ import { MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+ 
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

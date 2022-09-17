@@ -22,7 +22,7 @@ export class ListClientesComponent implements OnInit {
   openNewCliente():void
 {
   const dialogRef = this.dialog.open(NewClienteComponent, {
-    width: '250px',
+    width: '30%',
   
   });
 }
