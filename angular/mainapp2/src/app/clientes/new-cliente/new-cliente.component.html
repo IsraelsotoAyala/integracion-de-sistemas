@@ -5,6 +5,29 @@
  <div class="container">
 
     <form class="example-form">
+
+
+        <mat-form-field appearance="fill">
+            <mat-label>Tipo de cliente</mat-label>
+            <mat-select [(ngModel)]="tipoCliente" name="tipo_cliente">
+              <mat-option *ngFor="let cli of tipos_clientes" [value]="cli.valor">
+                {{cli.texto}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Tipo de documento</mat-label>
+            <mat-select [(ngModel)]="tipoDocumento" name="food">
+              <mat-option *ngFor="let docs of tipos_documentos" [value]="docs.valor">
+                {{docs.texto}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+
+
         <mat-form-field class="example-full-width" appearance="fill">
           <mat-label>Email</mat-label>
           <input type="email" matInput [formControl]="emailFormControl"
